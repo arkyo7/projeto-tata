@@ -28,7 +28,7 @@ export const services: Service[] = [
     imageAlt: "Resultado de extensão de cílios",
     imageWidth: 1000,
     imageHeight: 1333,
-    imageAspect: "aspect-[16/10]",
+    imageAspect: "aspect-[4/3]",
     imagePosition: "object-center",
     ctaLabel: "Quero fazer extensão de cílios",
     message: whatsappMessages.lashes,
