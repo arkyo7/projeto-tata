@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Tata Godoy | Extensão de Cílios e Limpeza de Pele na Bélgica" },
+      { title: "Tata Godoy | Extensão de Cílios e Limpeza de Pele" },
       {
         name: "description",
         content:

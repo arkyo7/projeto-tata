@@ -12,7 +12,7 @@ import { HoursSection } from "@/components/sections/HoursSection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 
-const title = "Tata Godoy | Extensão de Cílios e Limpeza de Pele na Bélgica";
+const title = "Tata Godoy | Extensão de Cílios e Limpeza de Pele";
 const description =
   "Conheça os serviços de extensão de cílios e limpeza de pele oferecidos por Tata Godoy na Bélgica. Entre em contato pelo WhatsApp e consulte os horários disponíveis.";
 
