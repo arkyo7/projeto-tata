@@ -5,35 +5,38 @@ export interface GalleryImage {
   aspect: string;
   width: number;
   height: number;
+  /** tailwind object-position utility */
+  position?: string;
 }
 
 export const galleryImages: GalleryImage[] = [
   {
     src: "/images/extensao-de-cilios-tata.webp",
-    alt: "Extensão de cílios realizada por Tata Godoy",
+    alt: "Detalhe de extensão de cílios realizada por Tata Godoy",
     aspect: "aspect-[3/4]",
-    width: 900,
-    height: 1200,
+    width: 1000,
+    height: 1333,
   },
   {
     src: "/images/tata-realizando-limpeza-de-pele.webp",
-    alt: "Tata Godoy realizando uma limpeza de pele",
+    alt: "Tata Godoy realizando procedimento de limpeza de pele",
     aspect: "aspect-[4/5]",
-    width: 960,
-    height: 1200,
+    width: 1086,
+    height: 1448,
   },
   {
     src: "/images/tata-godoy-sobre.webp",
-    alt: "Tata Godoy em seu ambiente de atendimento",
+    alt: "Tata Godoy em seu espaço de atendimento",
     aspect: "aspect-[4/5]",
-    width: 960,
-    height: 1200,
+    width: 1000,
+    height: 1333,
+    position: "object-top",
   },
   {
     src: "/images/limpeza-de-pele-tata.webp",
-    alt: "Detalhe do cuidado com a pele durante o atendimento",
+    alt: "Cliente durante procedimento de limpeza de pele",
     aspect: "aspect-[3/4]",
-    width: 900,
-    height: 1200,
+    width: 1000,
+    height: 1502,
   },
 ];
