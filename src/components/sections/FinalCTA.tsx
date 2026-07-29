@@ -29,18 +29,12 @@ export function FinalCTA() {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+          <div className="mt-10 flex justify-center">
             <ExternalLink
-              href={createWhatsAppLink(whatsappMessages.lashes)}
+              href={createWhatsAppLink(whatsappMessages.schedule)}
               className={buttonStyles.onDark}
             >
-              Agendar extensão de cílios
-            </ExternalLink>
-            <ExternalLink
-              href={createWhatsAppLink(whatsappMessages.skincare)}
-              className={buttonStyles.onDarkOutline}
-            >
-              Agendar limpeza de pele
+              Agendar horário
             </ExternalLink>
           </div>
         </Reveal>
