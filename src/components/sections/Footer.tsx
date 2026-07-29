@@ -13,11 +13,11 @@ export function Footer() {
             <img
               src={siteConfig.logo.white}
               alt={siteConfig.logo.alt}
-              width={160}
-              height={48}
+              width={900}
+              height={495}
               loading="lazy"
               decoding="async"
-              className="h-10 w-auto"
+              className="h-auto w-[168px] object-contain"
             />
             <ul className="mt-6 space-y-1.5 text-sm text-nude">
               <li>Extensão de cílios</li>

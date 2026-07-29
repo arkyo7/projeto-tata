@@ -47,12 +47,15 @@ export function Header() {
             <img
               src={siteConfig.logo.white}
               alt={siteConfig.logo.alt}
-              width={160}
-              height={48}
+              width={900}
+              height={495}
               decoding="async"
+              fetchPriority="high"
               className={cn(
-                "w-auto transition-all duration-500",
-                scrolled ? "h-8" : "h-10 lg:h-12",
+                "h-auto object-contain transition-all duration-500",
+                scrolled
+                  ? "w-[108px] lg:w-[128px]"
+                  : "w-[124px] lg:w-[155px]",
               )}
             />
             <span className="sr-only">{siteConfig.name}</span>
