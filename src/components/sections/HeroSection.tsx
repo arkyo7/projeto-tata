@@ -100,17 +100,17 @@ export function HeroSection() {
           className="relative"
         >
           <div className="absolute -left-4 -top-4 hidden h-32 w-32 rounded-tl-[2rem] border-l border-t border-gold/60 lg:block" />
-          <div className="overflow-hidden rounded-[1.75rem] bg-nude/60 lg:rounded-[2.25rem]">
+          <div className="group aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-nude/40 lg:rounded-[2.25rem]">
             <img
               src="/images/extensao-de-cilios-tata.webp"
-              alt="Extensão de cílios realizada por Tata Godoy"
+              alt="Detalhe de extensão de cílios realizada por Tata Godoy"
               width={1000}
-              height={1250}
+              height={1333}
               sizes="(max-width: 1024px) 100vw, 45vw"
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              className="aspect-[4/5] h-full w-full object-cover"
+              className="h-full w-full object-cover object-center transition-transform duration-[550ms] ease-out lg:group-hover:scale-[1.04]"
             />
           </div>
           <div className="absolute -bottom-4 -right-4 hidden h-32 w-32 rounded-br-[2rem] border-b border-r border-gold/60 lg:block" />

@@ -15,10 +15,12 @@ export function ServiceCard({ service }: { service: Service }) {
       <BrandImage
         src={service.image}
         alt={service.imageAlt}
-        width={900}
-        height={675}
+        width={service.imageWidth}
+        height={service.imageHeight}
+        objectPosition={service.imagePosition}
+        hoverScale="lg:group-hover:scale-[1.04]"
         sizes="(max-width: 1024px) 100vw, 50vw"
-        className="aspect-[4/3] w-full"
+        className={`${service.imageAspect} w-full`}
       />
 
       <div className="flex flex-1 flex-col p-7 sm:p-8">

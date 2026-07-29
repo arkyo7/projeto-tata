@@ -10,25 +10,25 @@ export function SkinCareSection() {
     <section className="bg-blush py-20 lg:py-28">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <Reveal variants={imageReveal} className="relative">
-          <div className="group">
+          <div className="group lg:w-[88%]">
             <BrandImage
               src="/images/tata-realizando-limpeza-de-pele.webp"
-              alt="Tata Godoy realizando uma limpeza de pele"
-              width={1000}
-              height={1250}
-              sizes="(max-width: 1024px) 100vw, 45vw"
-              className="aspect-[4/5] w-full rounded-[1.75rem] lg:rounded-[2rem]"
+              alt="Tata Godoy realizando procedimento de limpeza de pele"
+              width={1086}
+              height={1448}
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="aspect-[4/5] w-full rounded-[1.75rem] shadow-[0_24px_50px_-38px_oklch(0.4474_0.054_37.26)] lg:rounded-[2rem]"
             />
           </div>
 
-          <div className="group mt-5 lg:absolute lg:-bottom-12 lg:-right-10 lg:mt-0 lg:w-[46%]">
+          <div className="group mt-5 lg:absolute lg:-bottom-10 lg:right-0 lg:mt-0 lg:w-[38%]">
             <BrandImage
               src="/images/limpeza-de-pele-tata.webp"
-              alt="Detalhe do cuidado com a pele durante o atendimento"
-              width={640}
-              height={640}
-              sizes="(max-width: 1024px) 100vw, 22vw"
-              className="aspect-square w-full rounded-[1.5rem] border-4 border-blush lg:rounded-[1.75rem]"
+              alt="Cliente durante procedimento de limpeza de pele"
+              width={1000}
+              height={1502}
+              sizes="(max-width: 1024px) 100vw, 20vw"
+              className="aspect-[3/4] w-full rounded-[1.5rem] border-2 border-gold/70 lg:rounded-[1.75rem]"
             />
           </div>
         </Reveal>
