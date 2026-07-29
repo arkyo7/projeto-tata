@@ -30,7 +30,7 @@ export function Header() {
           "fixed inset-x-0 top-0 z-50 transition-all duration-500",
           scrolled
             ? "bg-espresso/85 shadow-[0_10px_30px_-24px_oklch(0.2486_0.0198_34.43)] backdrop-blur-md"
-            : "bg-espresso/45 backdrop-blur-[2px]",
+            : "bg-gradient-to-b from-espresso/85 via-espresso/60 to-transparent backdrop-blur-[2px]",
         )}
       >
         <div
@@ -47,12 +47,15 @@ export function Header() {
             <img
               src={siteConfig.logo.white}
               alt={siteConfig.logo.alt}
-              width={160}
-              height={48}
+              width={900}
+              height={495}
               decoding="async"
+              fetchPriority="high"
               className={cn(
-                "w-auto transition-all duration-500",
-                scrolled ? "h-8" : "h-10 lg:h-12",
+                "h-auto object-contain transition-all duration-500",
+                scrolled
+                  ? "w-[108px] lg:w-[128px]"
+                  : "w-[124px] lg:w-[155px]",
               )}
             />
             <span className="sr-only">{siteConfig.name}</span>

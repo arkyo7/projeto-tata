@@ -57,10 +57,11 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
               <img
                 src={siteConfig.logo.white}
                 alt={siteConfig.logo.alt}
-                width={120}
-                height={36}
+                width={900}
+                height={495}
+                loading="lazy"
                 decoding="async"
-                className="h-8 w-auto"
+                className="h-auto w-[118px] object-contain"
               />
               <button
                 type="button"

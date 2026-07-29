@@ -103,6 +103,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap",
       },
+      {
+        rel: "preload",
+        as: "image",
+        href: "/images/extensao-de-cilios-tata.webp",
+        type: "image/webp",
+        fetchPriority: "high",
+      },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),

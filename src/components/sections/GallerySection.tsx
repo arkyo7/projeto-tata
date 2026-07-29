@@ -58,7 +58,7 @@ export function GallerySection() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 loading="lazy"
                 decoding="async"
-                className="h-full w-full object-cover transition-transform duration-[550ms] ease-out group-hover:scale-[1.045]"
+                className={`h-full w-full object-cover ${image.position ?? "object-center"} transition-transform duration-[550ms] ease-out lg:group-hover:scale-[1.04]`}
               />
             </motion.button>
           ))}

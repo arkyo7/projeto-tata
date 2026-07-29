@@ -9,12 +9,17 @@ interface BrandImageProps {
   imgClassName?: string;
   priority?: boolean;
   sizes?: string;
+  /** desktop-only hover zoom; disabled on touch/mobile widths */
   zoomOnHover?: boolean;
+  /** tailwind scale utility used on desktop hover */
+  hoverScale?: string;
+  /** tailwind object-position utility, e.g. "object-top" */
+  objectPosition?: string;
 }
 
 /**
- * Image wrapper with a nude fallback surface so the layout stays elegant
- * while the real photos are being added to /public/images.
+ * Shared image wrapper: enforces overflow-hidden containers, object-cover,
+ * explicit intrinsic dimensions and a desktop-only hover zoom.
  */
 export function BrandImage({
   src,
@@ -26,9 +31,11 @@ export function BrandImage({
   priority = false,
   sizes = "(max-width: 768px) 100vw, 50vw",
   zoomOnHover = true,
+  hoverScale = "lg:group-hover:scale-[1.04]",
+  objectPosition = "object-center",
 }: BrandImageProps) {
   return (
-    <div className={cn("overflow-hidden bg-nude/60", className)}>
+    <div className={cn("overflow-hidden bg-nude/40", className)}>
       <img
         src={src}
         alt={alt}
@@ -40,7 +47,8 @@ export function BrandImage({
         fetchPriority={priority ? "high" : "auto"}
         className={cn(
           "h-full w-full object-cover transition-transform duration-[550ms] ease-out",
-          zoomOnHover && "group-hover:scale-[1.045]",
+          objectPosition,
+          zoomOnHover && hoverScale,
           imgClassName,
         )}
       />

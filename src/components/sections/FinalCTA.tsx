@@ -12,11 +12,11 @@ export function FinalCTA() {
           <img
             src={siteConfig.logo.white}
             alt={siteConfig.logo.alt}
-            width={180}
-            height={54}
+            width={900}
+            height={495}
             loading="lazy"
             decoding="async"
-            className="mx-auto h-12 w-auto"
+            className="mx-auto h-auto w-[190px] object-contain sm:w-[230px]"
           />
           <span className="mx-auto mt-8 block h-px w-16 bg-gold" aria-hidden="true" />
           <h2 className="mt-8 text-balance text-[2rem] leading-[1.15] text-pure-white sm:text-[2.6rem]">

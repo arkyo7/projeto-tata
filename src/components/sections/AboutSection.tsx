@@ -18,11 +18,13 @@ export function AboutSection() {
           />
           <BrandImage
             src="/images/tata-godoy-sobre.webp"
-            alt="Tata Godoy, profissional de extensão de cílios e limpeza de pele"
-            width={960}
-            height={1200}
+            alt="Tata Godoy em seu espaço de atendimento"
+            width={1000}
+            height={1333}
+            objectPosition="object-top"
+            hoverScale="lg:group-hover:scale-[1.03]"
             sizes="(max-width: 1024px) 100vw, 45vw"
-            className="aspect-[4/5] w-full rounded-[1.75rem] lg:rounded-[2rem]"
+            className="aspect-[4/5] w-full rounded-[1.75rem] shadow-[0_24px_50px_-38px_oklch(0.4474_0.054_37.26)] lg:rounded-[2rem]"
           />
         </Reveal>
 
