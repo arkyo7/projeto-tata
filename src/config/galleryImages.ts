@@ -23,6 +23,7 @@ export const galleryImages: GalleryImage[] = [
     aspect: "aspect-[4/5]",
     width: 1086,
     height: 1448,
+    position: "object-bottom",
   },
   {
     src: "/images/tata-godoy-sobre.webp",

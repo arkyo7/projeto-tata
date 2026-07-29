@@ -16,6 +16,7 @@ export function SkinCareSection() {
               alt="Tata Godoy realizando procedimento de limpeza de pele"
               width={1086}
               height={1448}
+              objectPosition="object-bottom"
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="aspect-[4/5] w-full rounded-[1.75rem] shadow-[0_24px_50px_-38px_oklch(0.4474_0.054_37.26)] lg:rounded-[2rem]"
             />
