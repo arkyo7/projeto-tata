@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import { Sparkles, Eye, Droplets } from "lucide-react";
 import { heroImage, heroText } from "@/lib/motion";
-import { createWhatsAppLink } from "@/lib/whatsapp";
-import { whatsappMessages } from "@/lib/whatsappMessages";
-import { ExternalLink, buttonStyles } from "../ExternalLink";
+import { cn } from "@/lib/utils";
+import { buttonStyles } from "../ExternalLink";
 
 const highlights = [
   { icon: Sparkles, label: "Atendimento personalizado" },
@@ -60,18 +59,15 @@ export function HeroSection() {
             animate="visible"
             className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
           >
-            <ExternalLink
-              href={createWhatsAppLink(whatsappMessages.lashes)}
-              className={buttonStyles.primary}
+            <a
+              href="#servicos"
+              className={cn(
+                "group inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300",
+                buttonStyles.primary,
+              )}
             >
-              Quero fazer extensão de cílios
-            </ExternalLink>
-            <ExternalLink
-              href={createWhatsAppLink(whatsappMessages.skincare)}
-              className={buttonStyles.outline}
-            >
-              Quero fazer uma limpeza de pele
-            </ExternalLink>
+              Conhecer nossos serviços
+            </a>
           </motion.div>
 
           <motion.ul

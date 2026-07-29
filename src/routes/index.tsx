@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MotionConfig } from "framer-motion";
 import { Header } from "@/components/Header";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { AboutSection } from "@/components/sections/AboutSection";
@@ -48,7 +48,6 @@ function Index() {
           <FinalCTA />
         </main>
         <Footer />
-        <WhatsAppButton />
       </div>
     </MotionConfig>
   );

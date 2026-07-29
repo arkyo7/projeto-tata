@@ -110,7 +110,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "image/webp",
         fetchPriority: "high",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      {
+        rel: "icon",
+        type: "image/webp",
+        href: "/images/logo-tata-godoy-branca-transparente.webp",
+      },
     ],
   }),
 
