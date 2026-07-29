@@ -45,7 +45,7 @@ export const services: Service[] = [
     imageWidth: 1086,
     imageHeight: 1448,
     imageAspect: "aspect-[4/3]",
-    imagePosition: "object-center",
+    imagePosition: "object-bottom",
     ctaLabel: "Quero fazer uma limpeza de pele",
     message: whatsappMessages.skincare,
   },
